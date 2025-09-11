@@ -21,8 +21,17 @@ public class Main {
             students.add(student);
         }
         System.out.println("list of students: ");
+
         for (Student student : students) {
             System.out.println(student);
+        }
+        System.out.println("Give search term: ");
+        String term = newStudent.nextLine();
+        System.out.println("Results: ");
+        for (Student student : students) {
+            if (student.getName().contains(term)) {
+                System.out.println(student);
+            }
         }
     }
 }
