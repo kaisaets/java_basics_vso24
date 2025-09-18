@@ -16,7 +16,6 @@ public class Ex69 {
         return help;
     }
     public static boolean palindrome(String text) {
-        // write your code here
         return text.equals(reverse(text));
     }
 
